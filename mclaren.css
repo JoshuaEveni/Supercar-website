@@ -1,0 +1,114 @@
+/* -000- Grid Setup -000- */
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo banner banner"
+        "nav nav nav"
+        "main main sidebar"
+        "footer footer footer";
+    grid-gap: 4px;
+}
+
+/* -000- End of Grid Setup -000- */
+
+/* -000- Area styling start -000- */
+
+.box {
+    border: solid 1px black; /* Solid black border to add tidyness */
+    padding: 20px;
+    background-color: #ddd; /* this is basically the colour grey */
+    border-radius: 10px;
+}
+
+.banner {
+    background-image: url(carbon.jpg); 
+}
+                                         /* both the banner and logo have the carbon fibre texture as their backgrounds, it adds that supercar feel */
+.logo {
+    background-image: url(carbon.jpg);
+}
+
+.nav, .sidebar, .footer {
+    background-color: #E16407; /* Orange colour as this is the theme of the website */
+}
+
+.main {
+    background-color: #AA7850; /* light brown, it goes well with the orange */
+}
+
+body {
+    background-color: #ddd; /* light grey for the default colour */
+}
+/* -000 Area styling end -000- */
+
+/* -000- Area Specfics -000- */
+
+.banner {
+    grid-area: banner;
+    text-align: center;
+    color: orange; /* orange colour because the text has to be orange as it is the theme of the website */
+    text-shadow: 2px 2px 1px brown; /* brown text shadow goes well with the orange */
+    font-size: 300%;
+    padding-bottom: 50px;
+    padding-top: 120px;
+}
+
+.main {
+    grid-area: main;
+    color: white; /* colour is white because it makes it easier to read the content */
+    font-size: 25px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    text-align: center;
+}
+
+.nav {
+    grid-area: nav;
+    text-align: center;
+    text-decoration: none;
+    font-size: 150%;
+    color: white; /* white to make it easier to read content */
+}
+
+.footer {
+    grid-area: footer;
+    text-align: right;
+}
+
+.nav a:visited {
+    color: white; /* white to make it easier to read content */
+}
+
+.logo {
+    grid-area: logo;
+    text-align: center;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.MclarenCars {
+    border: 10px outset black; /* black for the image borders to make them stand out */
+}
+
+.button {
+  background-color: #AA7850; /* light-Brown to go with the orange */
+  border: none;
+  color: white; /* easy to read when the background is a dark colour */
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 14px 40px;
+  border-radius: 8px;
+}
+
+.button:hover {
+    box-shadow: 3px 3px 2px brown; /* when hovered over it adds a brown box shadow */
+}
