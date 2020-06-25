@@ -1,0 +1,141 @@
+body {
+    margin: auto;
+    padding: 50px;
+    color: #000;
+    font-family: 'Oswald', sans-serif; /* The font used for the body text */
+    background-color: grey;
+}
+
+/* ---- Set up of site grid ---- */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo banner banner"
+        "nav nav nav"
+        "main main side"
+        "footer footer footer";
+    grid-gap: 4px;
+}
+
+
+/* ---- End of site grid setup ---- */
+
+/* -000- Area Styling -000- */
+
+.box {
+    border: solid 1px #000;
+    padding: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+/* Area colouring... */
+
+/* Logo and banner are the same */
+.logo, .banner {
+    background-color: #CB1933; /* Crimson */
+    padding: inherit;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
+/* Area specifics...*/
+
+.logo {
+    grid-area: logo;
+    padding: 0;
+    background-image: url(carbon.jpg);
+}
+                                      /* both the banner and logo have a carbon fibre background for that supercar feeling */
+.banner {
+    grid-area: banner;
+    background-image: url(carbon.jpg);
+    color: white;
+    text-decoration: underline;
+    font-size: 20px;
+    text-shadow: 2px 2px 1px red;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #4E5268; /* dark slate grey */
+    font-size: 150%; /* Easy to read */
+    text-align: center; /* Center align for a cleaner look */
+    color: white;
+}
+
+.main {
+    grid-area: main;
+    background-color: #9DADB2; /* Light Slate Grey */
+    color: black; /* Black for people to read easily */
+    font-size: 20px;
+}
+
+.side {
+    grid-area: side;
+    background-color: #CB1933; /* Crimson */
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #CB1933; /* a Crimson */
+    text-align: right;
+}
+
+h2 {
+    text-decoration: underline; 
+}
+                            
+h3 {
+    text-decoration: underline; 
+}
+
+li {
+    font-size: 20px; /* -000- Easy readability -000- */
+}
+
+/* -000- Area Styling End -000- */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Navigation links */
+.nav a {
+    font-weight: bold;
+}
+.nav a:link, .nav a:visited {
+    color: #12110D; /* Dark grey */
+}
+.nav a:hover {
+    color: white; /* The colour white helps with user readability. */
+    text-decoration: none;
+    text-shadow: 2px 2px 1px red;
+}
+
+.button {
+  background-color: #3C94CC; /* blue */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 14px 40px;
+  border-radius: 8px;
+}
+
+.button:hover {
+    box-shadow: 3px 3px 2px black; /* black shadows help the content pop out of the screen */
+}
+
+.significant {
+    border: 5px outset white; /* white border so that the images pop out, black didn't go well with the background colour */
+}
+
